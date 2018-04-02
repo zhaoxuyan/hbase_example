@@ -1,0 +1,58 @@
+hbase> create 'Student','S_No','S_Name','S_Sex','S_Age'
+
+hbase>put 'Student','s001','S_No','2015001'
+hbase>put 'Student','s001','S_Name','Zhangsan'
+hbase>put 'Student','s001','S_Sex','male'
+hbase>put 'Student','s001','S_Age','23'
+
+hbase>put 'Student','s002','S_No','2015002'
+hbase>put 'Student','s002','S_Name','Mary'
+hbase>put 'Student','s002','S_Sex','female'
+hbase>put 'Student','s002','S_Age','22'
+
+hbase>put 'Student','s003','S_No','2015003'
+hbase>put 'Student','s003','S_Name','Lisi'
+hbase>put 'Student','s003','S_Sex','male'
+hbase>put 'Student','s003','S_Age','24'
+
+
+hbase> create 'Course','C_No','C_Name','C_Credit'
+
+hbase>put 'Course','c001','C_No','123001'
+hbase>put 'Course','c001','C_Name','Math'
+hbase>put 'Course','c001','C_Credit','2.0'
+
+hbase>put 'Course','c002','C_No','123002'
+hbase>put 'Course','c002','C_Name','Computer'
+hbase>put 'Course','c002','C_Credit','5.0'
+
+hbase>put 'Course','c003','C_No','123003'
+hbase>put 'Course','c003','C_Name','English'
+hbase>put 'Course','c003','C_Credit','3.0'
+
+
+hbase> create 'SC','SC_Sno','SC_Cno','SC_Score'
+
+hbase>put 'SC','sc001','SC_Sno','2015001'
+hbase>put 'SC','sc001','SC_Cno','123001'
+hbase>put 'SC','sc001','SC_Score','86'
+
+hbase>put 'SC','sc002','SC_Sno','2015001'
+hbase>put 'SC','sc002','SC_Cno','123003'
+hbase>put 'SC','sc002','SC_Score','69'
+
+hbase>put 'SC','sc003','SC_Sno','2015002'
+hbase>put 'SC','sc003','SC_Cno','123002'
+hbase>put 'SC','sc003','SC_Score','77'
+
+hbase>put 'SC','sc004','SC_Sno','2015002'
+hbase>put 'SC','sc004','SC_Cno','123003'
+hbase>put 'SC','sc004','SC_Score','99'
+
+hbase>put 'SC','sc005','SC_Sno','2015003'
+hbase>put 'SC','sc005','SC_Cno','123001'
+hbase>put 'SC','sc005','SC_Score','98'
+
+hbase>put 'SC','sc006','SC_Sno','2015003'
+hbase>put 'SC','sc006','SC_Cno','123002'
+hbase>put 'SC','sc006','SC_Score','95'

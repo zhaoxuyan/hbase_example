@@ -11,7 +11,7 @@ public class HbaseBasicApi {
     /**
      * 建立连接
      */
-    private static void init() {
+    static void init() {
         Configuration configuration = HBaseConfiguration.create();
         configuration.set("hbase.rootdir", "hdfs://localhost:9000/hbase");
         try {
@@ -26,7 +26,7 @@ public class HbaseBasicApi {
      * 关闭连接
      * 注意：一切涉及对计算机资源的操作：如网络，文件，端口的操作，开了都要关。
      */
-    public static void close() {
+    static void close() {
         try {
             if (admin != null) {
                 admin.close();
@@ -97,7 +97,7 @@ public class HbaseBasicApi {
     public static void main(String[] args) throws IOException {
         init();
         System.out.println("=================================divider=================================");
-        createTable("student",new String[]{"student_info",""});
+        createTable("student",new String[]{"score"});
         insertData("student","zhangsan","score","English","98");
         insertData("student","zhangsan","score","Math","99");
         insertData("student","zhangsan","score","CS","100");
