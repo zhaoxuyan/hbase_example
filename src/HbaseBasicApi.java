@@ -5,8 +5,8 @@ import org.apache.hadoop.hbase.client.*;
 import java.io.IOException;
 
 public class HbaseBasicApi {
-    private static Connection connection; // 管理Hbase
-    private static Admin admin; // 管理Hbase数据库的表信息
+    static Connection connection; // 管理Hbase
+    static Admin admin; // 管理Hbase数据库的表信息
 
     /**
      * 建立连接
