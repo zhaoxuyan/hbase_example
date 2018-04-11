@@ -62,16 +62,16 @@ public class HbaseBasicApi {
      * 用法：insertData("student","zhangsan","score","English",69)
      * 命令：put 'student', 'zhangsan', 'score:Math', '99'
      */
-    private static void insertData(String tableName, String rowKey, String colFamily, String col, String value) throws IOException {
-        // 定位表名
-        Table table = connection.getTable(TableName.valueOf(tableName));
-        // 定位行键
-        Put put = new Put(rowKey.getBytes());
-        // 定位列族，列
-        put.addColumn(colFamily.getBytes(), col.getBytes(), value.getBytes());
-        table.put(put);
-        table.close();
-    }
+//    private static void insertData(String tableName, String rowKey, String colFamily, String col, String value) throws IOException {
+//        // 定位表名
+//        Table table = connection.getTable(TableName.valueOf(tableName));
+//        // 定位行键
+//        Put put = new Put(rowKey.getBytes());
+//        // 定位列族，列
+//        put.addColumn(colFamily.getBytes(), col.getBytes(), value.getBytes());
+//        table.put(put);
+//        table.close();
+//    }
 
     /**
      * 浏览单元格数据
@@ -98,9 +98,9 @@ public class HbaseBasicApi {
         init();
         System.out.println("=================================divider=================================");
         createTable("student",new String[]{"score"});
-        insertData("student","zhangsan","score","English","98");
-        insertData("student","zhangsan","score","Math","99");
-        insertData("student","zhangsan","score","CS","100");
+//        insertData("student","zhangsan","score","English","98");
+//        insertData("student","zhangsan","score","Math","99");
+//        insertData("student","zhangsan","score","CS","100");
         getData("student","zhangsan","score","CS");
         System.out.println("=================================divider=================================");
         close();
