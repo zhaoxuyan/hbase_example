@@ -55,4 +55,4 @@ hbase>put 'SC','sc005','SC_Score','98'
 
 hbase>put 'SC','sc006','SC_Sno','2015003'
 hbase>put 'SC','sc006','SC_Cno','123002'
-hbase>put 'SC','sc006','SC_Score','95'
+hbase>put 'SC','sc006','SC_Score','95' 
